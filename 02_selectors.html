@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* *******  UNIVERSAL SELECTORS ************ */
+        * {
+            color: red;
+        }
+
+        /* GROUP SELECTORS */
+        h3, p{
+            color: blue;
+        }
+
+        /* ELEMENT SELECTOR */
+        h2{
+            color: orange;
+        }
+        #first-heading{
+            color: green;
+        }
+
+        .second-heading{
+            color: hotpink;
+        }
+
+        /* NESTED SELECTORS  */
+        #welcome p{
+            font-size: 28px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="welcome">
+        <h2 id="first-heading">Welcome</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque vel voluptatem nam error illo? Eius
+            molestiae distinctio aut, debitis totam blanditiis soluta accusamus aliquid quae.</p>
+    </div>
+
+    <div>
+        <h2 class="second-heading">About</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias architecto culpa voluptas aliquid! Non
+            voluptatum ipsam perspiciatis eos quos repudiandae voluptates. Mollitia illo facere vero repudiandae officia
+            blanditiis corporis modi, non deserunt!</p>
+    </div>
+
+    <h3>
+        Thanks
+    </h3>
+</body>
+
+</html>

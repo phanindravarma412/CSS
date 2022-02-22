@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+
+    <style>
+        /* List style type */
+        ul li {
+            list-style-type: disc;
+            list-style-type: square;
+            list-style-type: circle;
+            list-style-type: none;
+        }
+
+        ol li {
+            list-style-type: upper-alpha;
+            list-style-type: upper-latin;
+        }
+
+        /* Image as list item */
+
+        ul.img li {
+
+            list-style-image: url('./img/stars.jpg');
+        }
+
+        /* Position the list item markers */
+        ul.position li {
+            list-style-type: circle;
+            list-style-position: outside;
+            list-style-position: inside;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+
+    <ul class="img">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+
+    <ul class="position">
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam qui vitae culpa atque! Velit omnis
+            consectetur, magni nam cum harum est iste rem quibusdam placeat doloremque! Consequuntur facere debitis
+            asperiores molestias nostrum aliquid pariatur maxime quaerat voluptatem officia. Exercitationem, magnam.
+        </li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam qui vitae culpa atque! Velit omnis
+            consectetur, magni nam cum harum est iste rem quibusdam placeat doloremque! Consequuntur facere debitis
+            asperiores molestias nostrum aliquid pariatur maxime quaerat voluptatem officia. Exercitationem, magnam.
+        </li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam qui vitae culpa atque! Velit omnis
+            consectetur, magni nam cum harum est iste rem quibusdam placeat doloremque! Consequuntur facere debitis
+            asperiores molestias nostrum aliquid pariatur maxime quaerat voluptatem officia. Exercitationem, magnam.
+        </li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam qui vitae culpa atque! Velit omnis
+            consectetur, magni nam cum harum est iste rem quibusdam placeat doloremque! Consequuntur facere debitis
+            asperiores molestias nostrum aliquid pariatur maxime quaerat voluptatem officia. Exercitationem, magnam.
+        </li>
+    </ul>
+</body>
+
+</html>

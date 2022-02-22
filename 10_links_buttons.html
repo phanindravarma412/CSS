@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links and Buttons</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        /* link pseudo selectors  */
+        a:link {
+            color: coral;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            color: cyan;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: hotpink;
+        }
+
+        /* Link as button */
+        a.link-as-button:link,
+        a.link-as-button:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a.link-as-button:hover,
+        a.link-as-button:active {
+            background-color: red;
+        }
+
+        /* Button styling */
+        .btn{
+            background-color: #4c6ca0;
+            color: #fff;
+            border: none;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover{
+            color: #f4f4f4;
+            background-color: #446190;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">Click here</a><br><br><br>
+
+    <a href="default.asp" class="link-as-button"> Link as button</a><br><br>
+
+    <button class="btn">My button</button>
+</body>
+
+</html>

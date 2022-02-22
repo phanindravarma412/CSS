@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model & padding & margin & outline</title>
+    <style>
+        /* Reset css */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .box-one {
+            border: 2px solid skyblue;
+            background-color: green;
+            color: white;
+
+            /* Padding to all */
+            padding: 10px;
+
+            /* Padding on specific side */
+            padding-top: 40px;
+
+            /* Padding shorthand -- Top Right Bottom Left*/
+            padding: 10px 20px 30px 40px;
+
+            /* Padding shorthand -- Top, Right&Left, Left */
+            padding: 15px 20px 15px;
+
+            /* Padding shorthand -- Top&Bottom, Left&Right */
+            padding: 20px 60px;
+
+        }
+
+        .box-two {
+            border: 2px solid skyblue;
+            background-color: green;
+            color: white;
+
+            /* margin all sided */
+            margin: 15px;
+
+            /* Margin on specific side */
+            margin-top: 40px;
+
+            /* Margin shorthand -- Top Right Bottom Left*/
+            margin: 10px 20px 30px 40px;
+
+            /* Margin shorthand -- Top, Right&Left, Left */
+            margin: 15px 20px 15px;
+
+            /* Margin shorthand -- Top&Bottom, Left&Right */
+            margin: 20px 60px;
+
+
+        }
+
+        .box-three{
+            border: 2px solid skyblue;
+            background-color: green;
+            color: white;
+
+            margin: 20px;
+            
+            /* Outline style */
+            outline-style: dotted;
+
+            /* Outline color */
+            outline-color: red;
+
+            /* Outline width */
+            outline-width: thick;
+
+            /* Ouline offset to add space in between border and outline */
+            outline-offset: 15px;
+
+            /* Shorthand offset */
+            outline: 5px solid yellow;
+
+
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-one">
+        <h3>Box one</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores incidunt eum, earum possimus vitae libero
+            at perferendis hic suscipit ipsam, veritatis, magnam quaerat aperiam nam quod ea aliquid? Aliquid,
+            aspernatur?</p>
+    </div>
+    <div class="box-two">
+        <h3>Box two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores incidunt eum, earum possimus vitae libero
+            at perferendis hic suscipit ipsam, veritatis, magnam quaerat aperiam nam quod ea aliquid? Aliquid,
+            aspernatur?</p>
+    </div>
+    <div class="box-three">
+        <h3>Box three</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores incidunt eum, earum possimus vitae libero
+            at perferendis hic suscipit ipsam, veritatis, magnam quaerat aperiam nam quod ea aliquid? Aliquid,
+            aspernatur?</p>
+    </div>
+
+</body>
+
+</html>

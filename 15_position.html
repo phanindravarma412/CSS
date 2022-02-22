@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div.static {
+            position: static;
+            border: 3px solid #73AD21;
+
+        }
+
+        div.relative {
+            position: relative;
+            left: 30px;
+            border: 3px solid #73AD21;
+        }
+
+        div.fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid #73AD21;
+        }
+
+        div.relative-2 {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px solid #73AD21;
+        }
+
+        div.absolute {
+            position: absolute;
+            top: 97px;
+            right: -3px;
+            width: 200px;
+            height: 100px;
+            border: 3px solid #73AD21;
+        }
+
+        div.sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            padding: 5px;
+            background-color: #cae8ca;
+            border: 2px solid #4CAF50;
+        }
+
+        div.container {
+            position: relative;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .topleft {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            font-size: 18px;
+            color: white;
+        }
+
+        .topright {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            font-size: 18px;
+            color: white;
+        }
+
+        .bottomleft {
+            position: absolute;
+            bottom: 50px;
+            left: 16px;
+            font-size: 18px;
+            color: white;
+        }
+
+        .bottomright {
+            position: absolute;
+            bottom: 50px;
+            right: 16px;
+            font-size: 18px;
+            color: white;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sticky">
+        This div element has position: sticky
+    </div><br><br>
+
+
+    <div class="static">
+        This div element has position: static;
+    </div><br><br>
+
+    <div class="relative">
+        This div element has position: relative
+    </div><br><br>
+
+    <div class="fixed">
+        This div element has position: fixed
+    </div><br><br>
+
+    <div class="relative-2">This div element has position: relative;
+        <div class="absolute">This div element has position: absolute;</div>
+    </div><br><br>
+    <div class="container">
+        <img src="./img/stars.jpg" alt="stars image">
+        <div class="topleft">Top left</div>
+        <div class="topright">Top right</div>
+        <div class="bottomleft">Bottom left</div>
+        <div class="bottomright">Bottom right</div>
+        <div class="center">Center</div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
